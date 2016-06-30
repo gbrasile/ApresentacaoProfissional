@@ -89,7 +89,9 @@
             <form name="formulario" method="post" action="<? echo base_url(). 'admin/insereSobre' ?>">
             <div class="form-group">
               <label align="left" for="exampleInputEmail1">Edição HTML - Bootstrap:*</label>
-              <textarea name="conteudo" rows="35" cols="60" class="form-control" placeholder="Conteúdo"></textarea>
+              <textarea name="conteudo" rows="35" cols="60" class="form-control" placeholder="Conteúdo">
+                <?php echo $conteudo; ?>
+              </textarea>
             </div>
 
             <button type="submit" value="Enviar" class="btn btn-default">Enviar</button>

@@ -15,7 +15,11 @@ class Admin extends Session_Controller {
 
 	public function recuperaSobre()
 	{
-		$this->load->view('admin_sobre');
+		$this->load->database();
+		$this->load->model("Formacao_Model");
+		$data = $this->Formacao_Model->recupera();
+
+		$this->load->view('admin_sobre', $data);
 	}
 
 	public function insereSobre()
