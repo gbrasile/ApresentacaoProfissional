@@ -1,7 +1,8 @@
 
-		<br><br>
-		<nav class="navbar navbar-default navbar-fixed-bottom"><center><h1>&copy; <?php echo "LP II ". date('Y')?></center></h1></nav>
-		</div> <!-- fim do wrapper -->	
+		
+		<!-- <div id="footer" class="panel-footer"><div class="container"><em>&copy; <?php //echo "LP II ". date('Y')?></em></div></div> -->
+		</div> <!-- fim do container -->	
+
 	</body>
 </html>
 
