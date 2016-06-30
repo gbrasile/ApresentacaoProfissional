@@ -30,7 +30,7 @@
             Conhecimentos básicos em banco de dados relacional, linguagens Java, SQL, JavaScript e em frameworks para desenvolvimento em PHP (CodeIgniter e Laravel). 
             Conhecimento intermediário em HTML, CSS, PHP, C e framework Bootstrap. 
             Experiência com uso de ferramenta de versionamento (Tortoise SVN).
-            <a href="<?php echo base_url() . 'welcome/pdf' ?>"><button class="btn btn-default">PDF</button></a>
+            <!-- <a href="<?php //echo base_url() . 'welcome/pdf' ?>"><button class="btn btn-default">PDF</button></a>-->
 
             
           </div>
