@@ -8,13 +8,13 @@ class Admin_Model extends CI_Model{
 	    }
 
 	     function sobreInsere($data){
-	     	$this->db->insert('sobre', $data);
 	     	$this->db->where('id', '1');
+			$this->db->update('sobre', $data); 
 	    }
 
 	    function trabalhoInsere($data){
-	    	$this->db->insert('trabalho', $data);
 	    	$this->db->where('id', '1');
+			$this->db->update('trabalho', $data); 
 	    }
 
 
