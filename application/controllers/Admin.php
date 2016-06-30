@@ -16,8 +16,8 @@ class Admin extends Session_Controller {
 	public function recuperaSobre()
 	{
 		$this->load->database();
-		$this->load->model("Formacao_Model");
-		$data = $this->Formacao_Model->recupera();
+		$this->load->model("Sobre_Model");
+		$data = $this->Sobre_Model->recupera();
 
 		$this->load->view('admin_sobre', $data);
 	}
@@ -46,7 +46,11 @@ class Admin extends Session_Controller {
 
 	public function recuperaTrabalho()
 	{
-		$this->load->view('admin_trabalho');
+		$this->load->database();
+		$this->load->model("Trabalho_Model");
+		$data = $this->Trabalho_Model->recupera();
+
+		$this->load->view('admin_trabalho', $data);
 	}
 
 	public function insereTrabalho()
@@ -73,8 +77,11 @@ class Admin extends Session_Controller {
 
 	public function recuperaformacao()
 	{
+		$this->load->database();
+		$this->load->model("Formacao_Model");
+		$data = $this->Formacao_Model->recupera();
 
-		$this->load->view('admin_formacao');
+		$this->load->view('admin_formacao', $data);
 	}
 
 	public function insereFormacao()
