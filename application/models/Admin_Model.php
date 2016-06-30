@@ -19,8 +19,8 @@ class Admin_Model extends CI_Model{
 
 
 	    function formacaoInsere($data){
-	    	$this->db->insert('formacao', $data);
 	    	$this->db->where('id', '1');
+			$this->db->update('formacao', $data); 
 
 	    }
 }
