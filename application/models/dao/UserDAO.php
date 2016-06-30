@@ -6,18 +6,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     parent::__construct();
     }
 
-    function get_dados_carro($x){
-      $this->db->select('*');
-      $this->db->from('carro');
-      $this->db->where('placa', $x);
-      return $this->db->get()->row_array();
-    }
-
-    function get_dados_prop($x){
-      $this->db->select('*');
-      $this->db->from('proprietario');
-      $this->db->where('placa', $x);
-      return $this->db->get()->row_array();
+    function create_table(){
+    	$sql="
+          CREATE TABLE IF NOT EXISTS user(
+           `id` integer(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+            `nome` varchar(40) NOT NULL,
+            `snome` varchar(40) NOT NULL,
+            `idade` integer(4) NOT NULL
+          )
+    	";
+    	$this->db->query($sql);
     }
   }
 ?>
