@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-require_once 'My_Controller.php';
+require_once 'MY_Controller.php';
 
-class Register extends My_Controller {
+class Register extends MY_Controller {
 
 	function Register() {
 		parent::__construct('Register');
