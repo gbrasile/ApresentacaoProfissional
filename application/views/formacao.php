@@ -21,9 +21,8 @@
       <div class="col-md-10">
         <div class="panel panel-default panel-sobre">
           <div class="panel-body">
-            <!-- <img width="50" height="50" src="<?php //echo base_url() . 'assets/img/icons/avatar.png' ?>"> -->
-            <img width="80" height="80" align="center"  src="<?php echo base_url() . 'assets/img/icons/graduate-cap.png' ?>">
-            <h2 align="center"><u>FORMAÇÃO</u></h2><br>
+            <img align="right" width="80" height="80" src="<?php echo base_url() . 'assets/img/icons/graduate-cap.png' ?>">
+            <h2 align="left"><u>FORMAÇÃO</u></h2><br><br>
               <? echo $conteudo; ?>
           </div>
         </div>
