@@ -15,7 +15,7 @@ $pdf->SetAutoPageBreak(true);
 $pdf->SetAuthor('Guilherme Brasile');
 $pdf->SetDisplayMode('real', 'default');
 // $pdf->Write(5, 'CodeIgniter TCPDF Integration');
-$pdf->SetFont('dejavusans', '', 14, '', true);
+$pdf->SetFont('helvetica', '', 14, '', true);
 
 // Add a page
 // This method has several options, check the source code documentation for more information.
