@@ -23,11 +23,42 @@ $pdf->AddPage();
 
 // Set some content to print
 $html = <<<EOD
-<h1>Welcome to <a href="http://www.tcpdf.org" style="text-decoration:none;background-color:#CC0000;color:black;">&nbsp;<span style="color:black;">TC</span><span style="color:white;">PDF</span>&nbsp;</a>!</h1>
-<i>This is the first example of TCPDF library.</i>
-<p>This text is printed using the <i>writeHTMLCell()</i> method but you can also use: <i>Multicell(), writeHTML(), Write(), Cell() and Text()</i>.</p>
-<p>Please check the source code documentation and other examples for further information.</p>
-<p style="color:#CC0000;">TO IMPROVE AND EXPAND TCPDF I NEED YOUR SUPPORT, PLEASE <a href="http://sourceforge.net/donate/index.php?group_id=128076">MAKE A DONATION!</a></p>
+<h1>Guilherme Brasile</h1><br>
+<h3>Residente em São Paulo , São Paulo - Brasil</h3>
+<h3>Resumo profissional</h3>
+-10 meses de experiência na área de Desenvolvimento WEB; <br>
+- Inglês intermediário/avançado; <br>
+- Facilidade de trabalhar em equipe; <br>
+- Boa comunicação oral e escrita; <br>
+- Interesse em aprender coisas novas e aprimorar conhecimentos.<br>
+
+<h3>Formação</h3>
+<h3>Escolaridade</h3>
+Formação superior (cursando)<br>
+<h3>Graduação</h3>
+Tecnologia em Análise e Desenvolvimento de Sistemas, Inst. Federal de Educação, Ciência e Tecnologia de SP.
+(Novembro de 2017) - Cursando<br>
+<h3>Curso técnico – Médio (2o grau)</h3>
+Técnico em Informática para Internet, Etec Parque Belém.
+(Junho de 2014) - Concluído <br>
+<h3>Formação escolar média (2o grau)</h3>
+Ensino Médio, ETEC Prof. Aprígio Gonzaga.
+(Novembro de 2014) - Concluído<br>
+
+<h3>Idiomas</h3>
+Inglês - intermediário<br>
+Espanhol - Básico <br>
+
+<h3>Experiência</h3>
+Estagiário em Desenvolvimento WEB - (Julho de 2015 - Dezembro de 2015)<br>
+Desenvolvedor WEB Trainee - (Janeiro de 2016 - Maio de 2016)<br>
+Desenvolvedor WEB Júnior - (Junho de 2016)<br>
+
+<h3>Conhecimentos</h3>
+Conhecimentos básicos em banco de dados relacional, linguagens Java, SQL, JavaScript e em frameworks para desenvolvimento em PHP (CodeIgniter e Laravel). 
+Conhecimento intermediário em HTML, CSS, PHP, C e framework Bootstrap. 
+Experiência com uso de ferramenta de versionamento (Tortoise SVN).
+
 EOD;
 
 // Print text using writeHTMLCell()
