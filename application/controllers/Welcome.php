@@ -16,7 +16,7 @@ class Welcome extends MY_Controller {
 	}
 
 	public function pdf(){
-		$this->load->library('tcpdf');
+		$this->load->library('TCPDF');
 
 		require_once('tcpdf_include.php');
 
