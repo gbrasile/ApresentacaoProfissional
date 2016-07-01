@@ -1,24 +1,31 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-require_once 'MY_Controller.php';
+//============================================================+
+// File name   : example_001.php
+// Begin       : 2008-03-04
+// Last Update : 2013-05-14
+//
+// Description : Example 001 for TCPDF class
+//               Default Header and Footer
+//
+// Author: Nicola Asuni
+//
+// (c) Copyright:
+//               Nicola Asuni
+//               Tecnick.com LTD
+//               www.tecnick.com
+//               info@tecnick.com
+//============================================================+
 
-class Welcome extends MY_Controller {
+/**
+ * Creates an example PDF TEST document using TCPDF
+ * @package com.tecnick.tcpdf
+ * @abstract TCPDF - Example: Default Header and Footer
+ * @author Nicola Asuni
+ * @since 2008-03-04
+ */
 
-	public function index(){
-		/*echo "Ol&aacute; Pessoal.<br> Sejam benvidos &agrave; discplina LPII";*/
-		$this->load->view('common/header');
-
-		/*$data['form_post_url']='welcome/create';
-		$this->load->view('test/form', $data);*/
-        $this->load->view('home');
-		$this->load->view('common/footer');
-		
-	}
-
-	public function pdf(){
-		$this->load->library('tcpdf');
-
-		require_once('tcpdf_include.php');
+// Include the main TCPDF library (search for installation path).
+require_once('tcpdf_include.php');
 
 // create new PDF document
 $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
@@ -54,8 +61,8 @@ $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
 
 // set some language-dependent strings (optional)
 if (@file_exists(dirname(__FILE__).'/lang/eng.php')) {
-    require_once(dirname(__FILE__).'/lang/eng.php');
-    $pdf->setLanguageArray($l);
+	require_once(dirname(__FILE__).'/lang/eng.php');
+	$pdf->setLanguageArray($l);
 }
 
 // ---------------------------------------------------------
@@ -97,52 +104,3 @@ $pdf->Output('example_001.pdf', 'I');
 //============================================================+
 // END OF FILE
 //============================================================+
-
-	}
-/*
-	public function create(){
-		$this->load->view('common/header');
-
-        echo "criando um registro do banco de dados";
-
-		$this->load->view('common/footer');
-	}
-
-	public function register(){
-		$this->load->view('common/header');
-		$this->load->view('users/register');
-		$this->load->view('common/footer');
-	}
-
-	public function char_filter($input){
-		echo "Entrada legal: $input";
-	}
-
-	public function crypt($data){
-		echo "<h1>CRIPTOGRAFIAS</h1>";
-		echo "MD5 ";
-		var_dump(md5($data));
-		echo "<hr>";
-		echo "SHA1 ";
-		var_dump(sha1($data)) ;
-		echo "<hr>";
-		echo "PASSWORD_BCRYPT ";
-		var_dump(password_hash($data, PASSWORD_BCRYPT));
-		echo "<hr>";
-		//temperando a senha...
-		$salt = 'vnjhwhr238784hf4';
-		echo "PASSWORD_BCRYPT temperada ";
-		var_dump(password_hash($data.$salt, PASSWORD_BCRYPT));
-		echo "<hr>";
-		$message = "Informação ultra-secreta";
-		$this->load->library('encrypt');
-		echo "Biblioteca encrypt ";
-		var_dump($this->encrypt->encode($message, $salt));
-		echo "<hr>";
-		$s = 'hmLZ4wrA4MVUx5nLSALKXnfWxkDOsEfZ6s6iYNFIZLnYJgOReuekqklDx5jyAjzHpzcVFNzhw/pdMRzACn5m5Q==';
-		var_dump($this->encrypt->decode($s, $salt));
-	}
-
-*/
-
-}

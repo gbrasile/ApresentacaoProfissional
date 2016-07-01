@@ -7,6 +7,7 @@
             <img align="right" width="80" height="80" src="<?php echo base_url() . 'assets/img/icons/graduate-cap.png' ?>">
             <h2 align="left"><u>FORMAÇÃO</u></h2><br><br>
               <? echo $conteudo; ?>
+              <a href="<?php echo base_url() . 'welcome/pdf' ?>"> <button> PDF </button></a>
           </div>
         </div>
       </div>
