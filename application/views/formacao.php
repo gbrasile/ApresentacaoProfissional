@@ -6,9 +6,9 @@
           <div class="panel-body">
             <img align="right" width="80" height="80" src="<?php echo base_url() . 'assets/img/icons/graduate-cap.png' ?>">
             <h2 align="left"><u>FORMAÇÃO</u></h2><br><br>
-              <? echo $conteudo; ?><br>
+              <? echo $conteudo; ?><br><br>
               <a target="_blank" href="<?php echo base_url() . 'MeuPdf' ?>"> 
-                <img src="<?php echo base_url() . 'assets/img/icons/pdf.png' ?>" />
+                <img align="center" src="<?php echo base_url() . 'assets/img/icons/pdf.png' ?>" />
               </a>
           </div>
         </div>
@@ -26,9 +26,9 @@
           <div class="panel-body">
             <img align="right" width="80" height="80" src="<?php echo base_url() . 'assets/img/icons/graduate-cap.png' ?>">
             <h2 align="left"><u>FORMAÇÃO</u></h2><br><br>
-              <? echo $conteudo; ?><br>
+              <? echo $conteudo; ?><br><br>
               <a target="_blank" href="<?php echo base_url() . 'MeuPdf' ?>"> 
-                <img src="<?php echo base_url() . 'assets/img/icons/pdf.png' ?>" />
+                <img align="center" src="<?php echo base_url() . 'assets/img/icons/pdf.png' ?>" />
               </a>
           </div>
         </div>
