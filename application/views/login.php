@@ -27,7 +27,7 @@
             <button type="reset" value="limpar formulario" class="btn btn-default">Limpar</button>
             <? if(!empty($erro)){ ?>
               <div class="alert alert-danger" role="alert" style=" margin-top: 10px;">
-               <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><?= $erro; ?></div>
+               <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<?= $erro; ?></div>
              <? 
               } 
             ?>
