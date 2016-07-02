@@ -1,4 +1,4 @@
-<div class="sobre-desktop">
+<div class="sobre-desktop hidden-sm hidden-xs">
   <div class="row">
 
       <div class="col-md-10">
