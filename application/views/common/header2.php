@@ -20,7 +20,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <a href="<?php echo base_url() . 'login' ?>">
-       <button class="btn btn-default navbar-btn pull-right hidden-sm hidden-xs">Área Restrita</button></a>
+       <button class="btn btn-default navbar-btn pull-right hidden-xs">Área Restrita</button></a>
       </ul>
     </div>
        <div class="navbar-collapse-response collapse pull-right col-xs-12 hidden-md hidden-lg">
