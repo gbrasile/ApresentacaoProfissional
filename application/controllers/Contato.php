@@ -26,10 +26,10 @@ class Contato extends MY_Controller {
 		$this->load->model("Contato_Model");
 		
 		$this->Contato_Model->inserir($data);
-
+		$dados['mensagem'] = "Mensagem cadastrada!";
 		$this->load->view('common/header');
 		$this->load->view('common/header2');
-		$this->load->view('contato');
+		$this->load->view('contato', $dados);
 
 	}
 }

@@ -26,7 +26,8 @@
             <?php echo form_submit('submit', 'Entrar', 'class="btn btn-default"'); ?>
             <button type="reset" value="limpar formulario" class="btn btn-default">Limpar</button>
             <? if(!empty($erro)){ ?>
-              <div class="alert alert-danger" role="alert" style=" margin-top: 10px;"><?= $erro; ?></div>
+              <div class="alert alert-danger" role="alert" style=" margin-top: 10px;">
+               <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><?= $erro; ?></div>
              <? 
               } 
             ?>

@@ -31,6 +31,12 @@
 
             <button type="submit" value="Enviar" class="btn btn-default">Enviar</button>
             <button type="reset" value="limpar formulario" class="btn btn-default">Limpar</button>
+             <? if(!empty($mensagem)){ ?>
+              <div class="alert alert-success" role="alert" style=" margin-top: 10px;">
+              <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span><?= $mensagem; ?></div>
+             <? 
+              } 
+            ?>
             
              <!-- </form> -->
             <?php form_close(); ?>
