@@ -64,8 +64,8 @@ EOD;
 // Print text using writeHTMLCell()
 $pdf->writeHTMLCell($w=0, $h=0, $x='', $y='', $html, $border=0, $ln=1, $fill=0, $reseth=true, $align='', $autopadding=true);
 
-$pdf->Write(5, 'some text', '');
-$pdf->Output('pdfexample.pdf', 'I');
+// $pdf->Write(5, 'some text', '');
+$pdf->Output('GuilhermeBrasile.pdf', 'I');
       }
 }
 ?>
